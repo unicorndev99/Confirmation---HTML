@@ -1,0 +1,275 @@
+html {
+  height: 100%;
+}
+.container {
+  padding-top: 20px;
+  z-index: 2;
+}
+.header-title {
+  padding: 1vh;
+  vertical-align: text-bottom;
+  display: flex;
+  justify-content: center;
+}
+.img-logo {
+  height: 10vh;
+  width: 12vh;
+}
+.header-text-col {
+  display: flex;
+  align-items: end;
+}
+.info-details {
+  padding: 1vh 0;
+}
+.info-details .row {
+  padding: 1.4vh;
+}
+.editor .row {
+  padding: 1.5vh;
+}
+.editor {
+  padding: 3vh 0;
+}
+.row-last {
+  padding: 0 !important; 
+}
+.color-blue {
+  color: rgb(10, 10, 138);
+}
+.info-title {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.first-word {
+  padding-left: 5px;
+}
+
+/* toggle button */
+
+label {
+    font-size: 13px;
+    color: #424242;
+    font-weight: 500;
+}
+
+.btn-color-mode-switch{
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner{
+    margin: 0px;
+    width: 180px;
+    height: 30px;
+    color: white;
+    background: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+    display: block;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+    content: attr(data-on);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    top: 5px;
+    right: 10px;
+
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+    content: attr(data-off);
+    width: 90px;
+    height: 100%;
+    background: #032d6c;
+    border-radius: 8px;
+    position: absolute;
+    /* left: 2px;
+    top: 2px; */
+    font-size: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 6px -2px rgb(57, 66, 187);
+    padding: 5px 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]{
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+    content: attr(data-on);
+    left: 90px;
+    background: #032d6c;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
+    content: attr(data-off);
+    right: auto;
+    left: 20px;
+}
+ /**/   
+.info-calendar {
+  width: 50%;
+  font-weight: 600;
+  border-radius: 10px !important;
+}
+
+.editor-panel {
+  border-color: rgb(22, 67, 133);
+  height: 40px;
+}
+.editor-panel::placeholder {
+  color: rgb(22, 67, 133);
+  opacity: 0.5;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: larger;
+  padding: 0 1%;
+}
+
+.editor-textarea-div {
+  display: inline-block;
+  position: relative;
+}
+
+.editor-textarea {
+  border-color: rgb(22, 67, 133);
+  border-radius: 10px !important;
+  padding: 19px 19px 19px 2%;
+}
+.border-r15 {
+  border-radius: 10px;
+}
+/* -------------- ICON ----------------  */
+.company-icon {
+  width: 20px;
+}
+.oldman-icon {
+  width: 15px;
+  height: 20px;
+}
+.time-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: baseline;
+}
+/* --------------------------------- */
+
+.editor-textarea::placeholder {
+  color: rgb(22, 67, 133);
+  opacity: 0.5;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: larger;
+  padding: 0 1%;
+}
+#appartement {
+  color: rgb(7, 43, 97);
+  padding: 0 2%;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: larger;
+}
+
+select:required:invalid {
+  color: rgba(22, 67, 133, 0.5) !important;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: rgb(7, 43, 97);
+  padding: 1vh 0;
+}
+
+.delete-btn{
+  position:absolute;
+  top:6%;
+  right: 3.5%;
+}
+
+.pen-btn{
+  position:absolute;
+  top:4%;
+  right: calc(5% + 10px);
+  width:1.25em;
+  background-color: white;
+}
+
+textarea{
+  display:block;
+}
+
+.submit-btn {
+  background-color: rgb(120, 201, 27);
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+.last-title {
+  color: rgb(22, 67, 133);
+  opacity: 0.5;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: larger;
+  padding: 0 1%;
+  margin: 0;
+}
+
+.row>* {
+  padding-right: 0 !important;
+}
+@media screen and (max-width: 576px) {
+  .info-title {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+}
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url("./assets/grandma.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 45% 100vh;
+  }
+  .container {
+    padding-top: 20px;
+    z-index: 2;
+  }
+  .content-body {
+    position: absolute;
+    border-radius: 20px;
+    border: solid 1px rgba(123, 123, 123, 0.2);
+    top: 20px;
+    left: 23%;
+    width: 55%;
+    height: 95.5%;
+    background-color: white;
+    z-index: -1;
+  }
+}
